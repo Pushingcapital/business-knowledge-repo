@@ -1,0 +1,70 @@
+# Business Knowledge Repository - .gitignore
+
+# Environment variables and secrets
+.env
+.env.local
+.env.production
+.env.development
+
+# API keys and credentials
+*.key
+*.pem
+*_credentials.json
+*_token.txt
+*_api_key.txt
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+logs/
+
+# Personal notes (if any)
+personal_notes/
+private/
+
+# Backup files
+*.bak
+*.backup
+
+# Large conversation exports (keep processed insights only)
+raw_exports/
+*.zip
+conversation_backups/
+
+# Sensitive business data
+financial_data/
+client_passwords/
+internal_only/
+
+# Node modules (if any JavaScript tools added)
+node_modules/
+
+# Python cache (if any Python tools added)
+__pycache__/
+*.pyc
+*.pyo
+
+# Archive files that might contain sensitive data
+*.tar.gz
+*.rar
+*.7z

@@ -1,9 +1,9 @@
 # Business Knowledge Repository
 
-[![Repository Status](https://img.shields.io/badge/Status-Active-green)](https://github.com/emmanuelhaddad/business-knowledge-repo)
-[![Knowledge Base](https://img.shields.io/badge/Documents-Live-blue)](https://github.com/emmanuelhaddad/business-knowledge-repo)
-[![Last Updated](https://img.shields.io/github/last-commit/emmanuelhaddad/business-knowledge-repo)](https://github.com/emmanuelhaddad/business-knowledge-repo/commits/main)
-[![Issues](https://img.shields.io/github/issues/emmanuelhaddad/business-knowledge-repo)](https://github.com/emmanuelhaddad/business-knowledge-repo/issues)
+[![Repository Status](https://img.shields.io/badge/Status-Active-green)](https://github.com/pushingcapital/business-knowledge-repo)
+[![Knowledge Base](https://img.shields.io/badge/Documents-Live-blue)](https://github.com/pushingcapital/business-knowledge-repo)
+[![Last Updated](https://img.shields.io/github/last-commit/pushingcapital/business-knowledge-repo)](https://github.com/pushingcapital/business-knowledge-repo/commits/main)
+[![Issues](https://img.shields.io/github/issues/pushingcapital/business-knowledge-repo)](https://github.com/pushingcapital/business-knowledge-repo/issues)
 
 > 🧠 **AI-Powered Business Intelligence System**  
 > Capturing, processing, and preserving every valuable business insight from AI conversations
@@ -62,7 +62,7 @@ Automation tools and utilities for timestamp management and data sync.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/emmanuelhaddad/business-knowledge-repo.git
+   git clone https://github.com/pushingcapital/business-knowledge-repo.git
    cd business-knowledge-repo
    ```
 

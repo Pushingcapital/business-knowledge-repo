@@ -1,0 +1,68 @@
+{
+  "name": "OpenPhone to Business Intelligence Pipeline",
+  "flow": [
+    {
+      "id": 1,
+      "module": "openphone:watchIncomingCalls",
+      "version": 1,
+      "parameters": {},
+      "mapper": {},
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "module": "hubspot:createActivity",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "activityType": "CALL",
+        "body": "{{1.transcription}}",
+        "timestamp": "{{1.created_at}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "module": "googleDrive:uploadFile",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "fileName": "call-log-{{formatDate(1.created_at; 'YYYY-MM-DD')}}.md",
+        "content": "# Call Log\n\n**Date:** {{1.created_at}}\n**Phone:** {{1.phone_number}}\n**Duration:** {{1.duration}}\n**Transcription:** {{1.transcription}}"
+      },
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "instant": true,
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "sequential": false,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "us1.make.com"
+  }
+}

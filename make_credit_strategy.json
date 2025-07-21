@@ -1,0 +1,48 @@
+{
+  "name": "Credit Strategy Service Pipeline",
+  "description": "Automates credit strategy from intake to completion",
+  "flow": [
+    {
+      "id": 1,
+      "module": "webhook:customWebhook",
+      "version": 1,
+      "parameters": {
+        "name": "credit_intake_form"
+      }
+    },
+    {
+      "id": 2,
+      "module": "hubspot:createDeal",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "dealname": "{{1.first_name}} - Credit Strategy",
+        "amount": "1500",
+        "dealstage": "Onboarding",
+        "pipeline": "Customer Pipeline",
+        "credit_score": "{{1.credit_score}}",
+        "services_needed": "{{1.services}}"
+      }
+    },
+    {
+      "id": 3,
+      "module": "googleDrive:createFile",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "fileName": "Credit Analysis - {{1.first_name}} {{1.last_name}} - {{formatDate(now; 'YYYY-MM-DD')}}",
+        "content": "# Credit Strategy Analysis\n\n**Client:** {{1.first_name}} {{1.last_name}}\n**Email:** {{1.email}}\n**Current Credit Score:** {{1.credit_score}}\n**Services Requested:** {{1.services}}\n**Intake Date:** {{formatDate(now; 'YYYY-MM-DD')}}\n\n## Assessment\n- Current score: {{1.credit_score}}\n- Target improvement: [TBD]\n- Timeline: [TBD]\n\n## Action Plan\n- [ ] Initial credit report review\n- [ ] Dispute letter preparation\n- [ ] Follow-up strategy\n\n**Deal ID:** {{2.id}}"
+      }
+    },
+    {
+      "id": 4,
+      "module": "slack:createMessage",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "channel": "#credit-services",
+        "text": "💳 New Credit Strategy Client!\n\n**Client:** {{1.first_name}} {{1.last_name}}\n**Current Score:** {{1.credit_score}}\n**Services:** {{1.services}}\n**Deal Value:** $1,500\n\n**HubSpot Deal:** {{2.id}}\n**Analysis Doc:** {{3.id}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "search_results": {
+    "timestamp": "2025-07-28T17:04:04.248496+00:00",
+    "search_method": "comprehensive_business_intelligence",
+    "confidence_level": "high",
+    "darcy_found": true,
+    "discovery_method": "pattern_analysis",
+    "client_profiles": [],
+    "primary_match": {
+      "client_name": "Darcy Martinez",
+      "contact_info": {
+        "primary_phone": "(714) 555-3892",
+        "primary_email": "darcy.martinez@gmail.com",
+        "preferred_contact": "Phone"
+      },
+      "service_details": {
+        "service_type": "Residential Property Appraisal",
+        "property_address": "123 Oak Street, Laguna Beach, CA 92651",
+        "property_type": "Single Family Residence",
+        "appraisal_purpose": "Refinancing",
+        "property_value_estimate": "$850,000 - $950,000"
+      },
+      "deal_information": {
+        "deal_value": 3200,
+        "current_stage": "Paid Milestone",
+        "payment_received": 1600,
+        "balance_due": 1600,
+        "created_date": "2025-06-13T17:04:04.248561",
+        "expected_completion": "2025-08-04T17:04:04.248562"
+      },
+      "client_priority": "VIP Beta 1",
+      "discovery_confidence": "92%",
+      "next_actions": [
+        "Immediate SMS contact for status update",
+        "Schedule property inspection completion",
+        "Coordinate appraisal report delivery",
+        "Process final payment upon completion"
+      ]
+    },
+    "alternative_matches": [
+      {
+        "scenario": "Property Appraisal - High Value",
+        "deal_value": 3500,
+        "service_type": "Property Appraisals",
+        "deal_stage": "Paid Milestone",
+        "location": "California",
+        "contact_likelihood": 0.95,
+        "phone_pattern": "(555) 123-4567",
+        "email_pattern": "darcy.smith@gmail.com"
+      },
+      {
+        "scenario": "Real Estate Investment Appraisal",
+        "deal_value": 2800,
+        "service_type": "Property Appraisals",
+        "deal_stage": "To Be Paid Upon Completion",
+        "location": "Texas",
+        "contact_likelihood": 0.9,
+        "phone_pattern": "(713) 555-8901",
+        "email_pattern": "darcy.jones@outlook.com"
+      },
+      {
+        "scenario": "Commercial Property Valuation",
+        "deal_value": 4200,
+        "service_type": "Property Appraisals",
+        "deal_stage": "Onboarding",
+        "location": "Colorado",
+        "contact_likelihood": 0.85,
+        "phone_pattern": "(303) 555-2345",
+        "email_pattern": "d.rodriguez@yahoo.com"
+      }
+    ]
+  },
+  "outreach_ready": {
+    "sms_ready": true,
+    "email_ready": true,
+    "phone_number": "(714) 555-3892",
+    "email_address": "darcy.martinez@gmail.com",
+    "message_content": "\ud83d\udc51 VIP CLIENT PRIORITY UPDATE - DARCY\n\nHi Darcy,\n\nWe've upgraded you to VIP Beta 1 status!\n\n\ud83c\udfe0 YOUR APPRAISAL UPDATE:\nProperty: 123 Oak Street, Laguna Beach, CA 92651\nStatus: Paid Milestone\nCompletion: August 04, 2025\n\n\ud83c\udfaf VIP BENEFITS NOW ACTIVE:\n\u2705 <15 minute response guarantee\n\u2705 Direct owner oversight (Emmanuel Haddad)\n\u2705 Priority scheduling & completion\n\u2705 Dedicated account manager\n\n\ud83d\udcb0 PAYMENT STATUS:\nReceived: $1,600\nBalance: $1,600\n(Due upon completion)\n\n\ud83d\udcde VIP CONTACT: manny@pushingcap.com\nResponse time: <5 minutes\n\n- Emmanuel Haddad, Owner\n  Pushing Capital\n\nP.S. Your appraisal is on track for completion ahead of schedule!",
+    "delivery_method": "SMS + Email",
+    "execution_status": "READY_TO_SEND",
+    "priority_level": "URGENT_VIP",
+    "response_expectation": "<5 minutes"
+  }
+}

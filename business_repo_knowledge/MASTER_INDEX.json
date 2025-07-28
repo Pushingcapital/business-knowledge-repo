@@ -1,0 +1,443 @@
+{
+  "created": "2025-07-28T17:10:00.926670+00:00",
+  "total_files_organized": 46,
+  "directory_structure": {
+    "clients": {
+      "description": "VIP clients, customer data, contact information",
+      "subdirs": [
+        "vip_clients",
+        "active_clients",
+        "leads",
+        "client_history"
+      ]
+    },
+    "deals": {
+      "description": "HubSpot deals, pipelines, sales data",
+      "subdirs": [
+        "active_deals",
+        "completed_deals",
+        "quotes",
+        "pipeline_analysis"
+      ]
+    },
+    "communications": {
+      "description": "Email intelligence, SMS, calls, client communications",
+      "subdirs": [
+        "email_data",
+        "sms_logs",
+        "call_records",
+        "communication_analysis"
+      ]
+    },
+    "services": {
+      "description": "Service delivery, appraisals, credit strategy, vehicle transport",
+      "subdirs": [
+        "appraisals",
+        "credit_strategy",
+        "vehicle_transport",
+        "funding"
+      ]
+    },
+    "ai_agents": {
+      "description": "AI agent systems, configurations, reports",
+      "subdirs": [
+        "grok_ceo",
+        "communications_manager",
+        "integrations_manager",
+        "email_intelligence",
+        "cursor_ai"
+      ]
+    },
+    "integrations": {
+      "description": "System integrations, APIs, automation",
+      "subdirs": [
+        "hubspot",
+        "openphone",
+        "slack",
+        "make_com",
+        "cloudflare",
+        "airtable"
+      ]
+    },
+    "insights": {
+      "description": "Business insights, analysis, reports",
+      "subdirs": [
+        "market_analysis",
+        "customer_insights",
+        "performance_reports",
+        "strategic_analysis"
+      ]
+    },
+    "decisions": {
+      "description": "Business decisions, strategy, planning",
+      "subdirs": [
+        "strategic_decisions",
+        "operational_decisions",
+        "technology_decisions",
+        "client_decisions"
+      ]
+    },
+    "processes": {
+      "description": "Standard operating procedures, workflows",
+      "subdirs": [
+        "sales_processes",
+        "service_delivery",
+        "client_onboarding",
+        "quality_control"
+      ]
+    },
+    "templates": {
+      "description": "Document templates, contracts, forms",
+      "subdirs": [
+        "contracts",
+        "forms",
+        "email_templates",
+        "documentation_templates"
+      ]
+    },
+    "scripts": {
+      "description": "Automation scripts, utilities, tools",
+      "subdirs": [
+        "automation",
+        "data_processing",
+        "utilities",
+        "deployment"
+      ]
+    },
+    "archives": {
+      "description": "Historical data, backups, deprecated files",
+      "subdirs": [
+        "2024",
+        "2025",
+        "deprecated",
+        "backups"
+      ]
+    }
+  },
+  "file_index": {
+    "integrations": {
+      "airtable": [
+        {
+          "file_name": "integration_report_20250728_162454.md",
+          "original_path": "integration_report_20250728_162454.md",
+          "new_path": "business_repo_knowledge/integrations/airtable/integration_report_20250728_162454.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "make_com": [
+        {
+          "file_name": "make_business_hub.json",
+          "original_path": "make_business_hub.json",
+          "new_path": "business_repo_knowledge/integrations/make_com/make_business_hub.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "make_management_cli.sh",
+          "original_path": "make_management_cli.sh",
+          "new_path": "business_repo_knowledge/integrations/make_com/make_management_cli.sh",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "openphone": [
+        {
+          "file_name": "openphone_api.py",
+          "original_path": "openphone_api.py",
+          "new_path": "business_repo_knowledge/integrations/openphone/openphone_api.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "openphone_make_blueprint.json",
+          "original_path": "openphone_make_blueprint.json",
+          "new_path": "business_repo_knowledge/integrations/openphone/openphone_make_blueprint.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "openphone_webhook.js",
+          "original_path": "openphone_webhook.js",
+          "new_path": "business_repo_knowledge/integrations/openphone/openphone_webhook.js",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "slack": [
+        {
+          "file_name": "slack_bot.py",
+          "original_path": "slack_bot.py",
+          "new_path": "business_repo_knowledge/integrations/slack/slack_bot.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "slack_webhook.js",
+          "original_path": "slack_webhook.js",
+          "new_path": "business_repo_knowledge/integrations/slack/slack_webhook.js",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "slack_make_blueprint.json",
+          "original_path": "slack_make_blueprint.json",
+          "new_path": "business_repo_knowledge/integrations/slack/slack_make_blueprint.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "ai_agents": {
+      "grok_ceo": [
+        {
+          "file_name": "ai_agents_deployment_report_20250728_163344.md",
+          "original_path": "ai_agents_deployment_report_20250728_163344.md",
+          "new_path": "business_repo_knowledge/ai_agents/grok_ceo/ai_agents_deployment_report_20250728_163344.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "launch_ai_agents.sh",
+          "original_path": "launch_ai_agents.sh",
+          "new_path": "business_repo_knowledge/ai_agents/grok_ceo/launch_ai_agents.sh",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "grok_ceo_agent.py",
+          "original_path": "grok_ceo_agent.py",
+          "new_path": "business_repo_knowledge/ai_agents/grok_ceo/grok_ceo_agent.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "cursor_ai": [
+        {
+          "file_name": "cursor_development.db",
+          "original_path": "cursor_development.db",
+          "new_path": "business_repo_knowledge/ai_agents/cursor_ai/cursor_development.db",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "cursor_ai_agent.py",
+          "original_path": "cursor_ai_agent.py",
+          "new_path": "business_repo_knowledge/ai_agents/cursor_ai/cursor_ai_agent.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "cursor_business_cli.sh",
+          "original_path": "cursor_business_cli.sh",
+          "new_path": "business_repo_knowledge/ai_agents/cursor_ai/cursor_business_cli.sh",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "cursor_ai_integration_report_20250728_165129.md",
+          "original_path": "cursor_ai_integration_report_20250728_165129.md",
+          "new_path": "business_repo_knowledge/ai_agents/cursor_ai/cursor_ai_integration_report_20250728_165129.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "cursor_ai_integration.py",
+          "original_path": "cursor_ai_integration.py",
+          "new_path": "business_repo_knowledge/ai_agents/cursor_ai/cursor_ai_integration.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "integrations_manager": [
+        {
+          "file_name": "integrations_manager_agent.py",
+          "original_path": "integrations_manager_agent.py",
+          "new_path": "business_repo_knowledge/ai_agents/integrations_manager/integrations_manager_agent.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "load_integrations_manager.sh",
+          "original_path": "load_integrations_manager.sh",
+          "new_path": "business_repo_knowledge/ai_agents/integrations_manager/load_integrations_manager.sh",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "clients": {
+      "vip_clients": [
+        {
+          "file_name": "comprehensive_darcy_discovery.py",
+          "original_path": "comprehensive_darcy_discovery.py",
+          "new_path": "business_repo_knowledge/clients/vip_clients/comprehensive_darcy_discovery.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "vip_clients.db",
+          "original_path": "vip_clients.db",
+          "new_path": "business_repo_knowledge/clients/vip_clients/vip_clients.db",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_vip_immediate_action_plan.md",
+          "original_path": "darcy_vip_immediate_action_plan.md",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_vip_immediate_action_plan.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_appraisals_search_20250728_164733.md",
+          "original_path": "darcy_appraisals_search_20250728_164733.md",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_appraisals_search_20250728_164733.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_discovery_results_20250728_170404.json",
+          "original_path": "darcy_discovery_results_20250728_170404.json",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_discovery_results_20250728_170404.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_vip_activation_report_20250728_165722.md",
+          "original_path": "darcy_vip_activation_report_20250728_165722.md",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_vip_activation_report_20250728_165722.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_appraisals_search_20250728_164121.md",
+          "original_path": "darcy_appraisals_search_20250728_164121.md",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_appraisals_search_20250728_164121.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_appraisals_search_20250728_165533.md",
+          "original_path": "darcy_appraisals_search_20250728_165533.md",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_appraisals_search_20250728_165533.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "darcy_vip_client_setup.py",
+          "original_path": "darcy_vip_client_setup.py",
+          "new_path": "business_repo_knowledge/clients/vip_clients/darcy_vip_client_setup.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "communications": {
+      "email_data": [
+        {
+          "file_name": "email_intelligence_agent.py",
+          "original_path": "email_intelligence_agent.py",
+          "new_path": "business_repo_knowledge/communications/email_data/email_intelligence_agent.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "email_intelligence_analysis_20250728_164713.md",
+          "original_path": "email_intelligence_analysis_20250728_164713.md",
+          "new_path": "business_repo_knowledge/communications/email_data/email_intelligence_analysis_20250728_164713.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "email_intelligence.db",
+          "original_path": "email_intelligence.db",
+          "new_path": "business_repo_knowledge/communications/email_data/email_intelligence.db",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "setup_email_integration.sh",
+          "original_path": "setup_email_integration.sh",
+          "new_path": "business_repo_knowledge/communications/email_data/setup_email_integration.sh",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "communication_analysis": [
+        {
+          "file_name": "communications_cloudshell_config.json",
+          "original_path": "communications_cloudshell_config.json",
+          "new_path": "business_repo_knowledge/communications/communication_analysis/communications_cloudshell_config.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "communications_manager_agent.py",
+          "original_path": "communications_manager_agent.py",
+          "new_path": "business_repo_knowledge/communications/communication_analysis/communications_manager_agent.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "deals": {
+      "active_deals": [
+        {
+          "file_name": "setup_hubspot_access.sh",
+          "original_path": "setup_hubspot_access.sh",
+          "new_path": "business_repo_knowledge/deals/active_deals/setup_hubspot_access.sh",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "hubspot_deal_finder.py",
+          "original_path": "hubspot_deal_finder.py",
+          "new_path": "business_repo_knowledge/deals/active_deals/hubspot_deal_finder.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "services": {
+      "vehicle_transport": [
+        {
+          "file_name": "make_vehicle_transport.json",
+          "original_path": "make_vehicle_transport.json",
+          "new_path": "business_repo_knowledge/services/vehicle_transport/make_vehicle_transport.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "credit_strategy": [
+        {
+          "file_name": "make_credit_strategy.json",
+          "original_path": "make_credit_strategy.json",
+          "new_path": "business_repo_knowledge/services/credit_strategy/make_credit_strategy.json",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "archives": {
+      "2024": [
+        {
+          "file_name": "wrangler.toml",
+          "original_path": "wrangler.toml",
+          "new_path": "business_repo_knowledge/archives/2024/wrangler.toml",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "README.md",
+          "original_path": "README.md",
+          "new_path": "business_repo_knowledge/archives/2024/README.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "CLOUD_DEPLOYMENT_GUIDE.md",
+          "original_path": "CLOUD_DEPLOYMENT_GUIDE.md",
+          "new_path": "business_repo_knowledge/archives/2024/CLOUD_DEPLOYMENT_GUIDE.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "LICENSE",
+          "original_path": "LICENSE",
+          "new_path": "business_repo_knowledge/archives/2024/LICENSE",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "owner_status_summary.md",
+          "original_path": "owner_status_summary.md",
+          "new_path": "business_repo_knowledge/archives/2024/owner_status_summary.md",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    },
+    "scripts": {
+      "utilities": [
+        {
+          "file_name": "business_repo_organization.py",
+          "original_path": "business_repo_organization.py",
+          "new_path": "business_repo_knowledge/scripts/utilities/business_repo_organization.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        },
+        {
+          "file_name": "admin_cloud_shell_setup.py",
+          "original_path": "admin_cloud_shell_setup.py",
+          "new_path": "business_repo_knowledge/scripts/utilities/admin_cloud_shell_setup.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ],
+      "deployment": [
+        {
+          "file_name": "cloud_shell_deployment.py",
+          "original_path": "cloud_shell_deployment.py",
+          "new_path": "business_repo_knowledge/scripts/deployment/cloud_shell_deployment.py",
+          "timestamp": "2025-07-28T17:10:00.926670+00:00"
+        }
+      ]
+    }
+  }
+}

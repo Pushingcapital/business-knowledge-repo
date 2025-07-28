@@ -1,0 +1,11 @@
+name = "pushing-capital-webhooks"
+main = "openphone_webhook.js"
+compatibility_date = "2023-12-01"
+
+[[services]]
+name = "openphone-webhook"
+script = "openphone_webhook.js"
+
+[[services]]  
+name = "slack-webhook"
+script = "slack_webhook.js"

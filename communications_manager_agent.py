@@ -158,15 +158,19 @@ class CommunicationsManagerAgent:
         
         # Send via each channel
         for channel in channels_to_use:
-            if self.channels[channel]['enabled']:
+            if channel in self.channels and self.channels[channel]['enabled']:
                 if channel == 'slack':
                     results[channel] = self._send_slack_message(formatted_content, message_request)
-                elif channel == 'sms':
-                    results[channel] = self._send_sms_message(formatted_content, recipients)
                 elif channel == 'email':
                     results[channel] = self._send_email_message(formatted_content, recipients, message_request)
                 else:
                     results[channel] = {'status': 'channel_not_implemented'}
+            elif channel == 'sms':
+                # Handle SMS via OpenPhone
+                if self.channels['openphone']['enabled']:
+                    results[channel] = self._send_sms_message(formatted_content, recipients)
+                else:
+                    results[channel] = {'status': 'openphone_disabled'}
             else:
                 results[channel] = {'status': 'channel_disabled'}
         

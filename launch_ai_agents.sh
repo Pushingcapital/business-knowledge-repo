@@ -182,6 +182,79 @@ launch_communications_manager() {
     fi
 }
 
+launch_cursor_ai() {
+    echo -e "${BLUE}🔮 Launching Cursor AI Agent...${NC}"
+    
+    if [ ! -f "cursor_ai_agent.py" ]; then
+        echo -e "${RED}❌ Cursor AI agent not found${NC}"
+        return 1
+    fi
+    
+    echo -e "${GREEN}Commands available:${NC}"
+    echo "  start                        - Start Cursor AI integration"
+    echo "  context                      - Update business context"
+    echo "  watch                        - Start file watching"
+    echo "  report                       - Generate development report"
+    echo "  status                       - Show integration status"
+    echo ""
+    
+    if [ $# -gt 1 ]; then
+        case "${2:-}" in
+            "start")
+                python3 cursor_ai_agent.py
+                ;;
+            "context")
+                echo "🔮 Updating Cursor AI business context..."
+                python3 -c "
+from cursor_ai_agent import CursorAIAgent
+agent = CursorAIAgent()
+agent.update_cursor_business_context()
+print('✅ Business context updated')
+"
+                ;;
+            "watch")
+                echo "👀 Starting Cursor AI file watching..."
+                python3 -c "
+from cursor_ai_agent import CursorAIAgent
+agent = CursorAIAgent()
+observer = agent.start_file_watching()
+try:
+    import time
+    print('🔮 Cursor AI watching for file changes... (Press Ctrl+C to stop)')
+    while True:
+        time.sleep(1)
+except KeyboardInterrupt:
+    observer.stop()
+    print('✅ File watching stopped')
+    observer.join()
+"
+                ;;
+            "report")
+                python3 -c "
+from cursor_ai_agent import CursorAIAgent
+agent = CursorAIAgent()
+report = agent.generate_development_report()
+print(report)
+"
+                ;;
+            "status")
+                echo "🔮 Cursor AI Integration Status:"
+                echo "  📧 Email Intelligence: $(python3 -c 'from cursor_ai_agent import CursorAIAgent; print(CursorAIAgent().get_email_intelligence_status())')"
+                echo "  🎯 HubSpot Integration: $(python3 -c 'from cursor_ai_agent import CursorAIAgent; print(CursorAIAgent().get_hubspot_status())')"
+                echo "  🔧 Integrations Health: $(python3 -c 'from cursor_ai_agent import CursorAIAgent; print(CursorAIAgent().get_integrations_status())')"
+                echo "  🔮 Cursor Settings: $([ -f '.cursor-settings.json' ] && echo '✅ Configured' || echo '❌ Missing')"
+                ;;
+            *)
+                echo "🔮 Running default Cursor AI integration..."
+                python3 cursor_ai_agent.py
+                ;;
+        esac
+    else
+        echo "🔮 Running default Cursor AI integration..."
+        python3 cursor_ai_agent.py
+    fi
+}
+
 deploy_to_cloud() {
     echo -e "${BLUE}☁️ Deploying to Google Cloud Shell...${NC}"
     
@@ -322,6 +395,7 @@ show_help() {
     echo "  integrations [cmd]    - Launch Integrations Manager"
     echo "  ceo [cmd]            - Launch Grok CEO Agent"
     echo "  communications [cmd]  - Launch Communications Manager"
+    echo "  cursor [cmd]         - Launch Cursor AI Agent"
     echo "  cloud [cmd]          - Deploy to Google Cloud Shell"
     echo "  coordinate           - Run agent coordination demo"
     echo "  status               - Show all agent status"
@@ -333,6 +407,7 @@ show_help() {
     echo "  ./launch_ai_agents.sh integrations status"
     echo "  ./launch_ai_agents.sh ceo report"
     echo "  ./launch_ai_agents.sh communications alert high 'System update'"
+    echo "  ./launch_ai_agents.sh cursor start"
     echo "  ./launch_ai_agents.sh cloud deploy"
     echo "  ./launch_ai_agents.sh coordinate"
     echo ""
@@ -358,6 +433,9 @@ main() {
             ;;
         "communications")
             launch_communications_manager "$@"
+            ;;
+        "cursor")
+            launch_cursor_ai "$@"
             ;;
         "cloud")
             deploy_to_cloud "$@"

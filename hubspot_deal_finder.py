@@ -4,7 +4,7 @@
 Search for specific deals in HubSpot for owner Emmanuel Haddad
 
 Target: Darcy + Appraisals deal
-Owner: Emmanuel Haddad (emmanuel@pushingcap.com)
+Owner: Emmanuel Haddad (manny@pushingcap.com)
 
 Created: 2025-07-28T16:40:00Z
 Last Modified: Claude AI Assistant - Owner Request

@@ -27,7 +27,7 @@ class AdminCloudShellSetup:
     def __init__(self):
         """Initialize Admin Cloud Shell Setup with owner privileges"""
         self.timestamp = datetime.now(timezone.utc).isoformat()
-        self.owner_email = "emmanuel@pushingcap.com"  # Primary admin
+        self.owner_email = "manny@pushingcap.com"  # PRIMARY SALES EMAIL - CORRECTED
         self.domain = "pushingcap.com"
         self.repository = "Pushingcapital/business-knowledge-repo"
         

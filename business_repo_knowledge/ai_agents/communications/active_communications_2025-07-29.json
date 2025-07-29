@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.607629Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "24a36de0-d692-44aa-ba9e-a46b29d48698",
+      "from_number": "+1-555-123-4567",
+      "to_number": "+1-555-SALES-01",
+      "assigned_user": "sales_bob_smith",
+      "type": "call",
+      "content": "Hi, I'm interested in purchasing a vehicle and need financing options"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.615991Z",
+    "department": "admin",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "21b2e82d-2d34-4925-b9a6-2229cf99baa2",
+      "from_number": "+1-555-EMERGENCY",
+      "to_number": "+1-555-SUPPORT-01",
+      "assigned_user": "admin_hannah_admin",
+      "type": "call",
+      "content": "EMERGENCY: Our delivery truck broke down and we need immediate help"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.624034Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "65edefbd-97c8-46bb-9bcf-c35b4254f9da",
+      "from_number": "+1-555-111-1111",
+      "to_number": "+1-555-SALES-01",
+      "assigned_user": "sales_charlie_brown",
+      "type": "call",
+      "content": "Looking to buy a luxury car"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.658920Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "75160a5b-8ef7-4fd0-a3fb-fb8e700bdaea",
+      "from_number": "+1-555-555-5555",
+      "to_number": "+1-555-SALES-02",
+      "assigned_user": "sales_alice_johnson",
+      "type": "call",
+      "content": "Interested in financing options"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.666800Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "474f8d1a-4d6c-4f8a-8412-ea47bfeb31fb",
+      "from_number": "+1-555-TEST-000",
+      "to_number": "+1-555-SALES-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Load test call #1"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.702687Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "1416fec7-5f85-45dd-a24c-a55808c8e41c",
+      "from_number": "+1-555-TEST-005",
+      "to_number": "+1-555-SALES-01",
+      "assigned_user": null,
+      "type": "sms",
+      "message": "Load test SMS #6"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.732449Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "35122a9d-c9ef-48b7-a91d-41dacea4faf0",
+      "from_number": "+1-555-TEST-010",
+      "to_number": "+1-555-SALES-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Load test call #11"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.751047Z",
+    "department": "sales",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "03bd61bb-efbe-4b96-9d1e-ec38f270a0c7",
+      "from_number": "+1-555-TEST-015",
+      "to_number": "+1-555-SALES-01",
+      "assigned_user": null,
+      "type": "sms",
+      "message": "Load test SMS #16"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

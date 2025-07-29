@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.510270Z",
+    "department": "credit_analysis",
+    "action": "user_added",
+    "data": {
+      "user_id": "credit_analysis_carol_davis",
+      "name": "Carol Davis",
+      "role": "lead",
+      "phone": "+1-555-CREDIT-01"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.517734Z",
+    "department": "credit_analysis",
+    "action": "user_added",
+    "data": {
+      "user_id": "credit_analysis_david_wilson",
+      "name": "David Wilson",
+      "role": "member",
+      "phone": "+1-555-CREDIT-01"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

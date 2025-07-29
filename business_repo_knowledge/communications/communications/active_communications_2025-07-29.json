@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.646443Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "71ab409a-b505-4ea0-b671-5340305ff2eb",
+      "from_number": "+1-555-444-4444",
+      "to_number": "+1-555-SUPPORT-01",
+      "assigned_user": "customer_service_grace_lee",
+      "type": "call",
+      "content": "Technical support needed"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.688932Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "64d2e7b7-6db6-48d0-a679-f98a5ab94c32",
+      "from_number": "+1-555-TEST-003",
+      "to_number": "+1-555-SUPPORT-01",
+      "assigned_user": "customer_service_frank_miller",
+      "type": "sms",
+      "message": "Load test SMS #4"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.698549Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "357c2aee-2c1a-42a4-ad97-455dab2f4436",
+      "from_number": "+1-555-TEST-004",
+      "to_number": "+1-555-ADMIN-01",
+      "assigned_user": "customer_service_frank_miller",
+      "type": "call",
+      "content": "Load test call #5"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.722430Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "378f066f-cb37-4eb1-8649-98c0f1aaa3fd",
+      "from_number": "+1-555-TEST-008",
+      "to_number": "+1-555-SUPPORT-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Load test call #9"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.727797Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "60c6b08a-0531-4e6a-a0b9-78d6a457ad7e",
+      "from_number": "+1-555-TEST-009",
+      "to_number": "+1-555-ADMIN-01",
+      "assigned_user": null,
+      "type": "sms",
+      "message": "Load test SMS #10"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.744162Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "e3dd64e1-358a-4e97-b018-6a597084973f",
+      "from_number": "+1-555-TEST-013",
+      "to_number": "+1-555-SUPPORT-01",
+      "assigned_user": null,
+      "type": "sms",
+      "message": "Load test SMS #14"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.749056Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "3323e43c-999e-4782-bef6-e90ad59c6d51",
+      "from_number": "+1-555-TEST-014",
+      "to_number": "+1-555-ADMIN-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Load test call #15"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.766292Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "bf7ea946-f248-4a68-b130-47e9345d199d",
+      "from_number": "+1-555-TEST-018",
+      "to_number": "+1-555-SUPPORT-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Load test call #19"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.772840Z",
+    "department": "customer_service",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "038c772a-d6d9-4ff4-8a96-dfbe605ab4c9",
+      "from_number": "+1-555-TEST-019",
+      "to_number": "+1-555-ADMIN-01",
+      "assigned_user": null,
+      "type": "sms",
+      "message": "Load test SMS #20"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

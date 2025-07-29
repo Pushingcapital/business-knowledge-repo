@@ -1,0 +1,38 @@
+groups:
+  - name: security_automation_alerts
+    rules:
+      - alert: LoginFailureRate
+        expr: rate(security_login_attempts_total{status="failed"}[5m]) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High login failure rate detected"
+          description: "Login failure rate is {{ $value }} failures per second for site {{ $labels.site }}"
+
+      - alert: LoginAttemptsDown
+        expr: increase(security_login_attempts_total[1h]) == 0
+        for: 2h
+        labels:
+          severity: critical
+        annotations:
+          summary: "No login attempts detected"
+          description: "No login attempts have been recorded in the last hour"
+
+      - alert: LongLoginDuration
+        expr: security_login_duration_seconds > 120
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Login taking too long"
+          description: "Login for {{ $labels.site }} took {{ $value }} seconds"
+
+      - alert: AutomationServiceDown
+        expr: up{job="security-automation"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Security automation service is down"
+          description: "The security automation service has been down for more than 1 minute" 

@@ -1,0 +1,123 @@
+{
+  "report_timestamp": "2025-07-29T12:15:01.773272Z",
+  "system_info": {
+    "version": "1.0.0",
+    "total_departments": 5,
+    "total_users": 9,
+    "total_phones": 0,
+    "active_sessions": 17
+  },
+  "departments": {
+    "Admin": {
+      "users": [
+        {
+          "user_id": "admin_hannah_admin",
+          "name": "Hannah Admin",
+          "status": "busy",
+          "role": "lead"
+        }
+      ],
+      "phone_numbers": [],
+      "repo_status": "\u274c Unknown department: Admin",
+      "primary_agent": "N/A"
+    },
+    "Credit Analysis": {
+      "users": [
+        {
+          "user_id": "credit_analysis_david_wilson",
+          "name": "David Wilson",
+          "status": "busy",
+          "role": "member"
+        },
+        {
+          "user_id": "credit_analysis_carol_davis",
+          "name": "Carol Davis",
+          "status": "busy",
+          "role": "lead"
+        }
+      ],
+      "phone_numbers": [],
+      "repo_status": "\u274c Unknown department: Credit Analysis",
+      "primary_agent": "N/A"
+    },
+    "Customer Service": {
+      "users": [
+        {
+          "user_id": "customer_service_grace_lee",
+          "name": "Grace Lee",
+          "status": "busy",
+          "role": "member"
+        },
+        {
+          "user_id": "customer_service_frank_miller",
+          "name": "Frank Miller",
+          "status": "busy",
+          "role": "lead"
+        }
+      ],
+      "phone_numbers": [],
+      "repo_status": "\u274c Unknown department: Customer Service",
+      "primary_agent": "N/A"
+    },
+    "Sales": {
+      "users": [
+        {
+          "user_id": "sales_bob_smith",
+          "name": "Bob Smith",
+          "status": "busy",
+          "role": "member"
+        },
+        {
+          "user_id": "sales_charlie_brown",
+          "name": "Charlie Brown",
+          "status": "busy",
+          "role": "member"
+        },
+        {
+          "user_id": "sales_alice_johnson",
+          "name": "Alice Johnson",
+          "status": "busy",
+          "role": "lead"
+        }
+      ],
+      "phone_numbers": [],
+      "repo_status": "\u274c Unknown department: Sales",
+      "primary_agent": "N/A"
+    },
+    "Vehicle Transport": {
+      "users": [
+        {
+          "user_id": "vehicle_transport_eve_brown",
+          "name": "Eve Brown",
+          "status": "busy",
+          "role": "lead"
+        }
+      ],
+      "phone_numbers": [],
+      "repo_status": "\u274c Unknown department: Vehicle Transport",
+      "primary_agent": "N/A"
+    }
+  },
+  "phone_system": {
+    "phones": [],
+    "daily_stats": []
+  },
+  "configuration": {
+    "max_concurrent_users": 10,
+    "max_phones_per_department": 5,
+    "emergency_escalation": true,
+    "auto_routing": true,
+    "business_hours": "09:00-17:00",
+    "timezone": "UTC"
+  },
+  "capabilities": [
+    "Multi-user simultaneous communication",
+    "Intelligent routing and classification",
+    "Department-based organization",
+    "Emergency escalation",
+    "Phone load balancing",
+    "Repository command interface",
+    "Real-time status monitoring",
+    "Usage analytics"
+  ]
+}

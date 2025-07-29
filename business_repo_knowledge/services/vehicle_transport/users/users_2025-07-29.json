@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.522727Z",
+    "department": "vehicle_transport",
+    "action": "user_added",
+    "data": {
+      "user_id": "vehicle_transport_eve_brown",
+      "name": "Eve Brown",
+      "role": "lead",
+      "phone": "+1-555-TRANSPORT-01"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

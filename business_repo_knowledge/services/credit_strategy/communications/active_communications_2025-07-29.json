@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.610361Z",
+    "department": "credit_analysis",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "083dc2b4-4344-479f-b498-f5bff6973e00",
+      "from_number": "+1-555-987-6543",
+      "to_number": "+1-555-CREDIT-01",
+      "assigned_user": "credit_analysis_david_wilson",
+      "type": "sms",
+      "message": "Need urgent help with my credit application status"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.631580Z",
+    "department": "credit_analysis",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "07a039fd-4367-47fb-9cf9-5710a7f4de25",
+      "from_number": "+1-555-222-2222",
+      "to_number": "+1-555-CREDIT-02",
+      "assigned_user": "credit_analysis_david_wilson",
+      "type": "call",
+      "content": "Credit application follow-up"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.673163Z",
+    "department": "credit_analysis",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "1ce9b467-9152-47c0-acf7-363b26d0ba8d",
+      "from_number": "+1-555-TEST-001",
+      "to_number": "+1-555-CREDIT-01",
+      "assigned_user": "credit_analysis_carol_davis",
+      "type": "sms",
+      "message": "Load test SMS #2"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.711233Z",
+    "department": "credit_analysis",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "c96ae144-b070-426b-a8e1-ba1bdcc187ba",
+      "from_number": "+1-555-TEST-006",
+      "to_number": "+1-555-CREDIT-01",
+      "assigned_user": "credit_analysis_carol_davis",
+      "type": "call",
+      "content": "Load test call #7"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.736375Z",
+    "department": "credit_analysis",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "483379e8-0ccc-4434-8319-f349141322de",
+      "from_number": "+1-555-TEST-011",
+      "to_number": "+1-555-CREDIT-01",
+      "assigned_user": null,
+      "type": "sms",
+      "message": "Load test SMS #12"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.754732Z",
+    "department": "credit_analysis",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "196097cb-7352-42f1-841b-e33e526b5ee1",
+      "from_number": "+1-555-TEST-016",
+      "to_number": "+1-555-CREDIT-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Load test call #17"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

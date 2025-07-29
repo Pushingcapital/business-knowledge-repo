@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.493777Z",
+    "department": "sales",
+    "action": "user_added",
+    "data": {
+      "user_id": "sales_alice_johnson",
+      "name": "Alice Johnson",
+      "role": "lead",
+      "phone": "+1-555-SALES-01"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.498392Z",
+    "department": "sales",
+    "action": "user_added",
+    "data": {
+      "user_id": "sales_bob_smith",
+      "name": "Bob Smith",
+      "role": "member",
+      "phone": "+1-555-SALES-01"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.504157Z",
+    "department": "sales",
+    "action": "user_added",
+    "data": {
+      "user_id": "sales_charlie_brown",
+      "name": "Charlie Brown",
+      "role": "member",
+      "phone": "+1-555-SALES-01"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.540613Z",
+    "department": "admin",
+    "action": "user_added",
+    "data": {
+      "user_id": "admin_hannah_admin",
+      "name": "Hannah Admin",
+      "role": "lead",
+      "phone": "+1-555-ADMIN-01"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

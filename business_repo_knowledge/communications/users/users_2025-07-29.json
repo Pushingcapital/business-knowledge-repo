@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-07-29T12:15:01.528430Z",
+    "department": "customer_service",
+    "action": "user_added",
+    "data": {
+      "user_id": "customer_service_frank_miller",
+      "name": "Frank Miller",
+      "role": "lead",
+      "phone": "+1-555-SUPPORT-01"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T12:15:01.532942Z",
+    "department": "customer_service",
+    "action": "user_added",
+    "data": {
+      "user_id": "customer_service_grace_lee",
+      "name": "Grace Lee",
+      "role": "member",
+      "phone": "+1-555-SUPPORT-01"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

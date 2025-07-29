@@ -32,6 +32,10 @@
           "condition": "{{1.source}} = openphone"
         },
         {
+          "name": "OneTalk Communications",
+          "condition": "{{1.source}} = onetalk"
+        },
+        {
           "name": "Slack Events",
           "condition": "{{1.source}} = slack"
         },
@@ -125,6 +129,39 @@
         "designer": {
           "x": 600,
           "y": 200
+        }
+      }
+    }
+    {
+      "id": 7,
+      "module": "onetalk:routeCommunication",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "from_number": "{{1.from_number}}",
+        "to_number": "{{1.to_number}}",
+        "message_type": "{{1.type}}",
+        "content": "{{1.content}}",
+        "department": "{{1.department}}",
+        "assigned_user": "{{1.assigned_user}}"
+      },
+      "filter": {
+        "name": "OneTalk Filter",
+        "conditions": [
+          [
+            {
+              "a": "{{1.source}}",
+              "b": "onetalk",
+              "o": "text:equal"
+            }
+          ]
+        ]
+      },
+      "routes": [2],
+      "metadata": {
+        "designer": {
+          "x": 900,
+          "y": 0
         }
       }
     }

@@ -1,0 +1,23 @@
+{
+  "name": "Emmanuel Haddad",
+  "role": "Finance Lead & CEO",
+  "department": "finance",
+  "specializations": [
+    "accounting",
+    "budgeting",
+    "investor_relations",
+    "financial_planning",
+    "compliance",
+    "payroll",
+    "tax_preparation",
+    "audit_support"
+  ],
+  "primary_phone": "+1-555-FINANCE-01",
+  "backup_phones": [
+    "+1-555-FINANCE-02",
+    "+1-555-FINANCE-03"
+  ],
+  "availability": "business_hours",
+  "escalation_priority": "highest",
+  "created_at": "2025-07-29T15:14:04.708238Z"
+}

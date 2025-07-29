@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  selenium-automation:
+    build: .
+    container_name: security_login_automation
+    environment:
+      - DISPLAY=:99
+      - PYTHONUNBUFFERED=1
+      - TZ=America/New_York
+    volumes:
+      - ./logs:/app/logs
+      - ./screenshots:/app/screenshots
+      - ./downloads:/app/downloads
+      - ./configs:/app/configs
+      - /dev/shm:/dev/shm
+    ports:
+      - "8080:8080"
+      - "5900:5900"
+    restart: unless-stopped
+    depends_on:
+      - redis
+      - prometheus
+    networks:
+      - automation-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: automation_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - automation-network
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: automation_prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    restart: unless-stopped
+    networks:
+      - automation-network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: automation_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin123
+    volumes:
+      - grafana_data:/var/lib/grafana
+    restart: unless-stopped
+    networks:
+      - automation-network
+
+volumes:
+  redis_data:
+  prometheus_data:
+  grafana_data:
+
+networks:
+  automation-network:
+    driver: bridge 

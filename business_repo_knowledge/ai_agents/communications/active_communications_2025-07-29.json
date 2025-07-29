@@ -110,5 +110,19 @@
       "message": "Load test SMS #16"
     },
     "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T15:14:04.840666Z",
+    "department": "admin",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "0324592c-0768-4a77-86af-a0b400cf2539",
+      "from_number": "+1-555-URGENT-TAX",
+      "to_number": "+1-555-FINANCE-02",
+      "assigned_user": null,
+      "type": "call",
+      "content": "URGENT: Tax deadline issue needs immediate attention"
+    },
+    "source": "onetalk_repo_commander"
   }
 ]

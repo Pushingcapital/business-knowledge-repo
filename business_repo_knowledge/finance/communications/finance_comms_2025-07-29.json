@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2025-07-29T15:14:04.832000Z",
+    "communication_id": "4a1e3079-da6a-4c81-92e2-0db331bca9c2",
+    "type": "call",
+    "content": "I need help with my invoice payment and billing questions",
+    "assigned_user": null,
+    "priority": "high"
+  },
+  {
+    "timestamp": "2025-07-29T15:14:04.859323Z",
+    "communication_id": "1845c470-a41d-4f21-a7f8-72f4453c26d3",
+    "type": "call",
+    "content": "Need financial reports for investor meeting tomorrow",
+    "assigned_user": null,
+    "priority": "normal"
+  },
+  {
+    "timestamp": "2025-07-29T15:14:04.882716Z",
+    "communication_id": "d5c7e43e-89e0-49b9-adbb-018f37918ab3",
+    "type": "call",
+    "content": "Questions about departmental budget allocation for next quarter",
+    "assigned_user": null,
+    "priority": "normal"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2025-07-29T15:14:04.812846Z",
+    "department": "finance",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "4a1e3079-da6a-4c81-92e2-0db331bca9c2",
+      "from_number": "+1-555-CLIENT-01",
+      "to_number": "+1-555-FINANCE-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "I need help with my invoice payment and billing questions"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T15:14:04.845084Z",
+    "department": "finance",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "1845c470-a41d-4f21-a7f8-72f4453c26d3",
+      "from_number": "+1-555-INVESTOR",
+      "to_number": "+1-555-FINANCE-03",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Need financial reports for investor meeting tomorrow"
+    },
+    "source": "onetalk_repo_commander"
+  },
+  {
+    "timestamp": "2025-07-29T15:14:04.868683Z",
+    "department": "finance",
+    "action": "route_communication",
+    "data": {
+      "communication_id": "d5c7e43e-89e0-49b9-adbb-018f37918ab3",
+      "from_number": "+1-555-BUDGET-Q",
+      "to_number": "+1-555-FINANCE-01",
+      "assigned_user": null,
+      "type": "call",
+      "content": "Questions about departmental budget allocation for next quarter"
+    },
+    "source": "onetalk_repo_commander"
+  }
+]

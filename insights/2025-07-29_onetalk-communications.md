@@ -222,3 +222,35 @@
 **Type:** sms
 **Preview:** Load test SMS #20...
 
+
+## Communication 4a1e3079
+**Time:** 2025-07-29T15:14:04.812745Z
+**Department:** finance
+**Assigned User:** None
+**Type:** call
+**Preview:** I need help with my invoice payment and billing questions...
+
+
+## Communication 0324592c
+**Time:** 2025-07-29T15:14:04.840597Z
+**Department:** admin
+**Assigned User:** None
+**Type:** call
+**Preview:** URGENT: Tax deadline issue needs immediate attention...
+
+
+## Communication 1845c470
+**Time:** 2025-07-29T15:14:04.845037Z
+**Department:** finance
+**Assigned User:** None
+**Type:** call
+**Preview:** Need financial reports for investor meeting tomorrow...
+
+
+## Communication d5c7e43e
+**Time:** 2025-07-29T15:14:04.868633Z
+**Department:** finance
+**Assigned User:** None
+**Type:** call
+**Preview:** Questions about departmental budget allocation for next quarter...
+

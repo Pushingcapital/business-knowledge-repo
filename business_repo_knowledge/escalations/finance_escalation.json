@@ -1,0 +1,31 @@
+{
+  "department": "finance",
+  "rules": {
+    "trigger_keywords": [
+      "cash flow emergency",
+      "payment crisis",
+      "audit emergency",
+      "tax deadline",
+      "compliance issue",
+      "financial emergency",
+      "urgent payment",
+      "bank emergency",
+      "investor crisis"
+    ],
+    "escalation_chain": [
+      "finance",
+      "admin"
+    ],
+    "max_response_time": 180,
+    "notification_channels": [
+      "slack",
+      "email",
+      "sms",
+      "phone"
+    ],
+    "priority_contacts": [
+      "Emmanuel Haddad"
+    ]
+  },
+  "created_at": "2025-07-29T15:14:04.806765Z"
+}

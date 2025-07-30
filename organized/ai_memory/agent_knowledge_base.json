@@ -1,0 +1,93 @@
+{
+  "entity_type": "knowledge_base",
+  "entity_id": "agent_kb_001",
+  "name": "Agent Knowledge Base",
+  "description": "Central knowledge repository for all AI agents in the business system",
+  "status": "active",
+  "created_at": "2025-01-30T15:30:45Z",
+  "updated_at": "2025-01-30T15:30:45Z",
+  "data": {
+    "business_context": {
+      "company_name": "Pushing Capital",
+      "industry": "Financial Services",
+      "primary_services": [
+        "credit_strategy",
+        "vehicle_transport",
+        "automation_solutions",
+        "business_intelligence"
+      ],
+      "key_metrics": {
+        "total_pipeline_value": 57977.00,
+        "active_deals": 37,
+        "monthly_recurring_revenue": 25000.00,
+        "customer_satisfaction_score": 4.2
+      }
+    },
+    "operational_knowledge": {
+      "business_hours": {
+        "timezone": "EST",
+        "start": "09:00",
+        "end": "17:00",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+      },
+      "escalation_procedures": {
+        "level_1": "automated_response",
+        "level_2": "ai_agent_intervention",
+        "level_3": "human_team_lead",
+        "level_4": "management_escalation"
+      },
+      "response_times": {
+        "chat": "immediate",
+        "email": "1_hour",
+        "phone": "5_minutes",
+        "complex_queries": "24_hours"
+      }
+    },
+    "integration_points": {
+      "hubspot": {
+        "purpose": "crm_management",
+        "sync_frequency": "real_time",
+        "data_types": ["deals", "contacts", "activities"]
+      },
+      "make_com": {
+        "purpose": "automation_workflows",
+        "active_scenarios": 6,
+        "monthly_operations": 2500
+      },
+      "slack": {
+        "purpose": "team_communication",
+        "channels": ["#business-alerts", "#finance", "#transport", "#credit"]
+      },
+      "openphone": {
+        "purpose": "voice_communications",
+        "features": ["call_recording", "transcription", "routing"]
+      }
+    },
+    "learning_patterns": {
+      "customer_interactions": {
+        "common_questions": [
+          "credit_score_improvement",
+          "vehicle_transport_quotes",
+          "payment_processing",
+          "service_availability"
+        ],
+        "resolution_success_rate": 85
+      },
+      "seasonal_trends": {
+        "q1": "tax_season_credit_focus",
+        "q2": "summer_vehicle_transport",
+        "q3": "back_to_school_automation",
+        "q4": "year_end_planning"
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "source": "system",
+    "file_type": "knowledge_base",
+    "encoding": "UTF-8"
+  }
+}

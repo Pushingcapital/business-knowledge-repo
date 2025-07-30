@@ -1,0 +1,92 @@
+{
+  "entity_type": "contacts_database",
+  "entity_id": "contacts_db_001",
+  "name": "Business Contacts Directory",
+  "description": "Central directory of business contacts, clients, and stakeholders",
+  "status": "active",
+  "created_at": "2025-01-30T15:30:45Z",
+  "updated_at": "2025-01-30T15:30:45Z",
+  "data": {
+    "contact_categories": {
+      "clients": {
+        "active_count": 142,
+        "total_lifetime_value": 487500.00,
+        "average_deal_size": 3434.51
+      },
+      "prospects": {
+        "active_count": 89,
+        "pipeline_value": 245000.00,
+        "conversion_rate": 23
+      },
+      "partners": {
+        "active_count": 12,
+        "referral_value": 125000.00,
+        "partnership_types": ["integration", "referral", "reseller"]
+      },
+      "vendors": {
+        "active_count": 28,
+        "annual_spend": 85000.00,
+        "categories": ["technology", "services", "office"]
+      }
+    },
+    "contact_fields": {
+      "required": [
+        "contact_id",
+        "first_name",
+        "last_name",
+        "email",
+        "contact_type",
+        "status"
+      ],
+      "optional": [
+        "phone",
+        "company",
+        "position",
+        "address",
+        "notes",
+        "tags",
+        "last_contact_date",
+        "next_follow_up"
+      ]
+    },
+    "data_quality": {
+      "email_validation": true,
+      "phone_formatting": true,
+      "duplicate_detection": true,
+      "data_enrichment": true
+    },
+    "privacy_compliance": {
+      "gdpr_compliant": true,
+      "data_retention_policy": "7_years",
+      "consent_tracking": true,
+      "right_to_deletion": true
+    },
+    "integration_sync": {
+      "hubspot": {
+        "enabled": true,
+        "sync_frequency": "real_time",
+        "last_sync": "2025-01-30T15:30:45Z"
+      },
+      "airtable": {
+        "enabled": true,
+        "sync_frequency": "hourly",
+        "last_sync": "2025-01-30T15:00:00Z"
+      }
+    },
+    "analytics": {
+      "contact_growth_rate": "12_percent_monthly",
+      "engagement_metrics": true,
+      "lifecycle_tracking": true,
+      "segmentation_active": true
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "source": "system",
+    "file_type": "contacts_database",
+    "encoding": "UTF-8"
+  }
+}

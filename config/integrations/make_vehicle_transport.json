@@ -76,5 +76,27 @@
         "text": "🚛 New Transport Quote Generated!\n\n**Route:** {{1.pickup_zip}} → {{1.delivery_zip}}\n**Vehicle:** {{1.vehicle_type}}\n**Quote:** ${{4.result}}\n**Customer:** {{1.first_name}} {{1.last_name}}\n\n**HubSpot Deal:** {{5.id}}"
       }
     }
-  ]
+  ],
+  "metadata": {
+    "instant": true,
+    "version": "1.0",
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "sequential": false,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "us1.make.com",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "file_type": "blueprint",
+    "encoding": "UTF-8"
+  }
 }

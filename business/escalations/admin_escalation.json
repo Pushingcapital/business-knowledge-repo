@@ -1,0 +1,93 @@
+{
+  "entity_type": "escalation_config",
+  "entity_id": "admin_escalation_001",
+  "name": "Administrative Escalation Configuration",
+  "description": "Escalation procedures and thresholds for administrative issues and emergencies",
+  "status": "active",
+  "created_at": "2025-01-30T15:30:45Z",
+  "updated_at": "2025-01-30T15:30:45Z",
+  "data": {
+    "escalation_matrix": {
+      "level_1": {
+        "name": "automated_response",
+        "response_time": "immediate",
+        "responsible_agent": "communications_manager",
+        "triggers": [
+          "routine_inquiry",
+          "information_request",
+          "status_update"
+        ]
+      },
+      "level_2": {
+        "name": "ai_agent_intervention",
+        "response_time": "5_minutes",
+        "responsible_agent": "specialized_ai_agent",
+        "triggers": [
+          "complex_question",
+          "technical_issue",
+          "process_clarification"
+        ]
+      },
+      "level_3": {
+        "name": "human_team_lead",
+        "response_time": "30_minutes",
+        "responsible_person": "team_lead",
+        "triggers": [
+          "agent_unable_to_resolve",
+          "customer_dissatisfaction",
+          "policy_exception_needed"
+        ]
+      },
+      "level_4": {
+        "name": "management_escalation",
+        "response_time": "2_hours",
+        "responsible_person": "management",
+        "triggers": [
+          "high_value_deal_at_risk",
+          "legal_concern",
+          "reputation_risk",
+          "system_emergency"
+        ]
+      }
+    },
+    "trigger_conditions": {
+      "financial_thresholds": {
+        "deal_value": 10000.00,
+        "potential_loss": 5000.00,
+        "payment_delay_days": 30
+      },
+      "operational_thresholds": {
+        "response_time_exceeded": "2x_sla",
+        "error_rate_percentage": 10,
+        "customer_satisfaction_drop": 20
+      },
+      "emergency_indicators": [
+        "system_outage",
+        "data_breach",
+        "regulatory_inquiry",
+        "media_attention"
+      ]
+    },
+    "notification_channels": {
+      "level_1": ["automated_response"],
+      "level_2": ["slack_mention", "internal_alert"],
+      "level_3": ["phone_call", "slack_urgent", "email_priority"],
+      "level_4": ["phone_call", "text_message", "email_priority", "slack_emergency"]
+    },
+    "escalation_tracking": {
+      "log_all_escalations": true,
+      "follow_up_required": true,
+      "resolution_tracking": true,
+      "performance_metrics": true
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "source": "system",
+    "file_type": "escalation_config",
+    "encoding": "UTF-8"
+  }
+}

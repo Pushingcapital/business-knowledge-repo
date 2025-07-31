@@ -40,5 +40,27 @@
         "content": "# Slack Business Intelligence\n\n**Date:** {{formatDate(1.ts; 'YYYY-MM-DD HH:mm')}}\n**User:** {{1.user}}\n**Channel:** {{1.channel}}\n\n## Message\n{{1.text}}"
       }
     }
-  ]
+  ],
+  "metadata": {
+    "instant": true,
+    "version": "1.0",
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "sequential": false,
+      "confidential": false,
+      "dataloss": false,
+      "dlq": false
+    },
+    "designer": {
+      "orphans": []
+    },
+    "zone": "us1.make.com",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "file_type": "blueprint",
+    "encoding": "UTF-8"
+  }
 }

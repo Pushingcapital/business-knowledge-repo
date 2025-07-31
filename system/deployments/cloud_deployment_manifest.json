@@ -1,0 +1,115 @@
+{
+  "deployment_id": "cloud_deploy_001",
+  "name": "Business Knowledge Repository Cloud Deployment",
+  "description": "Deployment configuration for cloud-based business intelligence and AI agent systems",
+  "version": "1.0",
+  "created_at": "2025-01-30T15:30:45Z",
+  "updated_at": "2025-01-30T15:30:45Z",
+  "deployment_config": {
+    "environment": "production",
+    "region": "us-east-1",
+    "availability_zones": ["us-east-1a", "us-east-1b", "us-east-1c"],
+    "auto_scaling": {
+      "enabled": true,
+      "min_instances": 2,
+      "max_instances": 10,
+      "target_cpu_utilization": 70
+    }
+  },
+  "services": {
+    "ai_agents": {
+      "communications_manager": {
+        "status": "active",
+        "instances": 2,
+        "memory": "2GB",
+        "cpu": "1vCPU"
+      },
+      "finance_manager": {
+        "status": "active", 
+        "instances": 1,
+        "memory": "1GB",
+        "cpu": "0.5vCPU"
+      },
+      "credit_strategy_agent": {
+        "status": "active",
+        "instances": 1,
+        "memory": "1GB", 
+        "cpu": "0.5vCPU"
+      }
+    },
+    "databases": {
+      "knowledge_base": {
+        "type": "postgresql",
+        "version": "14.9",
+        "storage": "100GB",
+        "backup_enabled": true
+      },
+      "conversation_history": {
+        "type": "mongodb",
+        "version": "6.0",
+        "storage": "50GB",
+        "retention_days": 90
+      }
+    },
+    "integrations": {
+      "hubspot_connector": {
+        "status": "active",
+        "endpoint": "https://api.hubapi.com",
+        "rate_limit": "10000/hour"
+      },
+      "make_com_webhooks": {
+        "status": "active",
+        "endpoints": 6,
+        "monthly_executions": 25000
+      },
+      "slack_bot": {
+        "status": "active",
+        "workspace": "pushing-capital",
+        "channels": 4
+      }
+    }
+  },
+  "monitoring": {
+    "health_checks": {
+      "enabled": true,
+      "interval": "30_seconds",
+      "timeout": "10_seconds"
+    },
+    "logging": {
+      "level": "info",
+      "retention_days": 30,
+      "centralized": true
+    },
+    "alerts": {
+      "error_rate_threshold": 5,
+      "response_time_threshold": "2_seconds",
+      "notification_channels": ["slack", "email"]
+    }
+  },
+  "security": {
+    "encryption": {
+      "at_rest": true,
+      "in_transit": true,
+      "key_management": "aws_kms"
+    },
+    "access_control": {
+      "authentication": "oauth2",
+      "authorization": "rbac",
+      "session_timeout": "8_hours"
+    },
+    "compliance": {
+      "standards": ["soc2", "gdpr"],
+      "audit_logging": true,
+      "data_retention_policy": "7_years"
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "source": "system",
+    "file_type": "deployment_manifest",
+    "encoding": "UTF-8"
+  }
+}

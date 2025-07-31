@@ -14,5 +14,13 @@
     "Create markdown documentation for all new features",
     "Link code changes to relevant Airtable records",
     "Follow established timestamp format: YYYY-MM-DDTHH:MM:SSZ"
-  ]
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-01-30T15:30:45Z",
+    "updated_at": "2025-01-30T15:30:45Z",
+    "last_modified_by": "Claude AI Assistant",
+    "file_type": "configuration",
+    "encoding": "UTF-8"
+  }
 }

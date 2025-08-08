@@ -1,0 +1,38 @@
+{
+  "cloud_shell_monitoring": {
+    "enabled": true,
+    "project_id": "pushing-capital-ai",
+    "monitoring_endpoints": [
+      "https://console.cloud.google.com/logs",
+      "https://console.cloud.google.com/run",
+      "https://console.cloud.google.com/monitoring"
+    ]
+  },
+  "admin_notifications": {
+    "owner_email": "emmanuel@pushingcap.com",
+    "alert_channels": [
+      "email",
+      "slack",
+      "sms"
+    ],
+    "escalation_matrix": {
+      "critical": [
+        "immediate_email",
+        "sms"
+      ],
+      "high": [
+        "email",
+        "slack"
+      ],
+      "normal": [
+        "slack"
+      ]
+    }
+  },
+  "cloud_shell_events": {
+    "deployment_notifications": true,
+    "health_alerts": true,
+    "resource_monitoring": true,
+    "security_alerts": true
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Vehicle Transport Quote to Deal Pipeline",
+  "description": "Automates vehicle transport from form submission to HubSpot deal",
+  "flow": [
+    {
+      "id": 1,
+      "module": "webhook:customWebhook",
+      "version": 1,
+      "parameters": {
+        "name": "vehicle_transport_form"
+      }
+    },
+    {
+      "id": 2,
+      "module": "hubspot:searchContacts",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "email": "{{1.email}}"
+      }
+    },
+    {
+      "id": 3,
+      "module": "hubspot:createContact",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "email": "{{1.email}}",
+        "firstname": "{{1.first_name}}",
+        "lastname": "{{1.last_name}}",
+        "phone": "{{1.phone}}"
+      },
+      "filter": {
+        "name": "Contact Not Found",
+        "conditions": [
+          {
+            "a": "{{length(2.results)}}",
+            "o": "number:equal",
+            "b": "0"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "module": "math:evaluateExpression",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "expression": "{{calculateTransportQuote(1.pickup_zip, 1.delivery_zip, 1.vehicle_type)}}"
+      }
+    },
+    {
+      "id": 5,
+      "module": "hubspot:createDeal",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "dealname": "{{1.pickup_zip}} >{{1.delivery_zip}}",
+        "amount": "{{4.result}}",
+        "dealstage": "Collect Quote",
+        "pipeline": "Nationwide Vehicle Transport Solutions",
+        "vehicle_type": "{{1.vehicle_type}}",
+        "pickup_location": "{{1.pickup_address}}",
+        "delivery_location": "{{1.delivery_address}}",
+        "service_type": "{{1.service_type}}"
+      }
+    },
+    {
+      "id": 6,
+      "module": "slack:createMessage",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "channel": "#transport-quotes",
+        "text": "🚛 New Transport Quote Generated!\n\n**Route:** {{1.pickup_zip}} → {{1.delivery_zip}}\n**Vehicle:** {{1.vehicle_type}}\n**Quote:** ${{4.result}}\n**Customer:** {{1.first_name}} {{1.last_name}}\n\n**HubSpot Deal:** {{5.id}}"
+      }
+    }
+  ]
+}

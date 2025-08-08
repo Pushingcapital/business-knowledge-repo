@@ -1,0 +1,142 @@
+{
+  "name": "Pushing Capital Business Intelligence Hub",
+  "description": "Master automation connecting HubSpot, OpenPhone, Slack, and Knowledge Repo",
+  "flow": [
+    {
+      "id": 1,
+      "module": "webhook:customWebhook",
+      "version": 1,
+      "parameters": {
+        "name": "business_events_webhook",
+        "description": "Central webhook for all business events"
+      },
+      "metadata": {
+        "designer": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 2,
+      "module": "tools:basicRouter",
+      "version": 1,
+      "parameters": {},
+      "routes": [
+        {
+          "name": "HubSpot Events",
+          "condition": "{{1.source}} = hubspot"
+        },
+        {
+          "name": "OpenPhone Events", 
+          "condition": "{{1.source}} = openphone"
+        },
+        {
+          "name": "Slack Events",
+          "condition": "{{1.source}} = slack"
+        },
+        {
+          "name": "Form Submissions",
+          "condition": "{{1.source}} = form"
+        }
+      ],
+      "metadata": {
+        "designer": {
+          "x": 300,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "module": "hubspot:createDeal",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "dealname": "{{1.deal_name}}",
+        "amount": "{{1.amount}}",
+        "dealstage": "{{1.stage}}",
+        "pipeline": "{{1.pipeline}}"
+      },
+      "routes": [2],
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": -100
+        }
+      }
+    },
+    {
+      "id": 4,
+      "module": "slack:createMessage",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "channel": "#business-alerts",
+        "text": "🎯 New business event: {{1.description}}\n💰 Value: ${{1.amount}}\n📊 Pipeline: {{1.pipeline}}\n🕐 Time: {{formatDate(now; 'YYYY-MM-DD HH:mm')}}"
+      },
+      "routes": [2],
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 0
+        }
+      }
+    },
+    {
+      "id": 5,
+      "module": "googleDrive:uploadFile",
+      "version": 1,
+      "parameters": {
+        "folder": "Business Intelligence Logs"
+      },
+      "mapper": {
+        "fileName": "business-event-{{formatDate(now; 'YYYY-MM-DD-HH-mm')}}.md",
+        "content": "# Business Event Log\n\n**Timestamp:** {{formatDate(now; 'YYYY-MM-DD HH:mm:ss')}}\n**Source:** {{1.source}}\n**Type:** {{1.type}}\n**Description:** {{1.description}}\n\n## Event Data\n```json\n{{formatJSON(1)}}\n```\n\n## Business Impact\n- **Pipeline Value:** ${{1.amount}}\n- **Stage:** {{1.stage}}\n- **Priority:** {{1.priority}}\n\n## Action Items\n- [ ] Review and validate data\n- [ ] Update relevant stakeholders\n- [ ] Schedule follow-up if needed"
+      },
+      "routes": [2],
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 100
+        }
+      }
+    },
+    {
+      "id": 6,
+      "module": "airtable:createRecord",
+      "version": 1,
+      "parameters": {
+        "base": "appLPGFO41RF6QKHo",
+        "table": "Business Insights"
+      },
+      "mapper": {
+        "fields": {
+          "Insight Title": "Make.com Event: {{1.description}}",
+          "Source": "Make.com Automation",
+          "Category": "{{1.category}}",
+          "Priority": "{{1.priority}}",
+          "Description": "{{1.description}}",
+          "Discovery Date": "{{formatDate(now; 'YYYY-MM-DD')}}"
+        }
+      },
+      "routes": [2],
+      "metadata": {
+        "designer": {
+          "x": 600,
+          "y": 200
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "instant": true,
+    "version": 1,
+    "scenario": {
+      "roundtrips": 1,
+      "maxErrors": 3,
+      "autoCommit": true,
+      "sequential": false
+    }
+  }
+}

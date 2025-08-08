@@ -1,0 +1,44 @@
+{
+  "name": "Slack Business Intelligence Capture",
+  "flow": [
+    {
+      "id": 1,
+      "module": "slack:watchDirectMessages",
+      "version": 1,
+      "parameters": {
+        "changeType": "created"
+      },
+      "filter": {
+        "name": "Business Keywords",
+        "conditions": [
+          {
+            "a": "{{1.text}}",
+            "o": "text:contains",
+            "b": "deal,client,quote,payment,contract"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "module": "hubspot:createActivity", 
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "activityType": "NOTE",
+        "body": "Slack Discussion: {{1.text}}",
+        "timestamp": "{{1.ts}}"
+      }
+    },
+    {
+      "id": 3,
+      "module": "googleDrive:uploadFile",
+      "version": 1,
+      "parameters": {},
+      "mapper": {
+        "fileName": "slack-intel-{{formatDate(1.ts; 'YYYY-MM-DD')}}.md",
+        "content": "# Slack Business Intelligence\n\n**Date:** {{formatDate(1.ts; 'YYYY-MM-DD HH:mm')}}\n**User:** {{1.user}}\n**Channel:** {{1.channel}}\n\n## Message\n{{1.text}}"
+      }
+    }
+  ]
+}
